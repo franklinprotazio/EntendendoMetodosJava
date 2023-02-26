@@ -4,9 +4,14 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		Quadrilatero.area(2);
-		Quadrilatero.area(2, 4);
-		Quadrilatero.area(3, 1, 3);
+		double areaQuadrado = QuadrilateroReturn.area(2);
+		double areaRetangulo = QuadrilateroReturn.area(2, 4);
+		double areaTriangulo = QuadrilateroReturn.area(3, 1, 3);
+		
+		System.out.println(areaQuadrado);
+		
+		int morando = 0;
+		double total = (int) morando;
 		
 	}
 

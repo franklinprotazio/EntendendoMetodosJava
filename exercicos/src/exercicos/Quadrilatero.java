@@ -13,4 +13,5 @@ public class Quadrilatero {
 	public static void area(double baseMaior, double baseMenor, double altura) {
 		System.out.println("Area do triangulo: " + ((baseMaior + baseMaior) * altura) / 2);
 	}
+	
 }
