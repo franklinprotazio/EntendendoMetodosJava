@@ -1,0 +1,27 @@
+package exercicos;
+
+import java.util.Scanner;
+
+public class Calculadora {
+
+	public static void main(String[] args) {
+		Scanner teclado = new Scanner(System.in);
+		
+		System.out.print("Digite um numero ");
+		double primeiroNumero = teclado.nextDouble();
+		
+		System.out.print("Digite um numero ");
+		double segundoNumero = teclado.nextDouble();
+		
+		somar(primeiroNumero, segundoNumero);
+		
+		teclado.close();
+	}
+	
+	
+	public static void somar(double valor1, double valor2) {
+		double resultado = valor1 + valor2;
+		System.out.println("A soma entre os valores eh " + resultado);
+	}
+
+}

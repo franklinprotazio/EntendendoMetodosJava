@@ -1,0 +1,18 @@
+package exercicos;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner teclado = new Scanner(System.in);
+		
+		Quadrilatero.area(2);
+		Quadrilatero.area(2, 4);
+		Quadrilatero.area(3, 1, 3);
+		
+		teclado.close();
+
+	}
+
+}

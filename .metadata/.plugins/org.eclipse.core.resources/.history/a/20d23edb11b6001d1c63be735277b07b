@@ -1,0 +1,36 @@
+package exercicos;
+
+import java.util.Scanner;
+
+public class Emprestimo {
+
+	public static void main(String[] args) {
+		Scanner teclado = new Scanner(System.in);
+		
+		System.out.print("Valor do emprestimo: ");	
+		double valorEmprestimo = teclado.nextDouble();
+		
+		System.out.print("Quantidade das parcelas: ");
+		int quantidadeParcelas = teclado.nextInt();
+		
+		parcelar(quantidadeParcelas);
+		
+		teclado.close();
+				
+	}
+	
+	public static void taxar(int valor) {
+		if(valor < 100) {
+			int valorPagamento = (valor * 10 / 100) + valor;
+			System.out.println(valorPagamento);
+		}
+	}
+	
+	public static void parcelar(int valor) {
+		if(valor < 100) {
+			taxar(valor);
+		//	System.out.println();
+		}
+	}
+
+}

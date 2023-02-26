@@ -1,0 +1,32 @@
+package exercicos;
+
+import java.util.Scanner;
+
+public class HoraDia {
+
+	public static void main(String[] args) {
+		Scanner teclado = new Scanner(System.in);
+		
+		System.out.println("Digite as horas");
+		double hora = teclado.nextDouble();
+		
+		teclado.close();
+
+	}
+	
+	
+	public static void mensagem(double valor) {
+		if(valor >= 6 && valor < 12) {
+			imprimirTela("Bom dia");
+		}else if(valor >= 12 && valor < 18) {
+			imprimirTela("Boa tarde");
+		}else if(valor >= 18 && valor < 24) {
+			imprimirTela("Boa noite");
+		}
+	}
+	
+	public static void imprimirTela(String texto) {
+		System.out.println(texto);
+	}
+
+}
